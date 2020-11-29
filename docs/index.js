@@ -275,24 +275,21 @@ document
   .getElementById("game-restart")
   .addEventListener("click", handleRestartGame);
 
-
 /* how to play button */
-function howToPlay1 () {
+function howToPlay1() {
+  const alert1 =
+    "The game is played on a grid that's 3 squares by 3 squares." +
+    "\nYou are X, your friend is O." +
+    "\nPlayers take turns putting their marks in empty squares." +
+    "\nThe first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner." +
+    "\nWhen all 9 squares are full, the game is over." +
+    "\nIf no player has 3 marks in a row, the game ends in a tie.";
 
-  const alert1 = "The game is played on a grid that's 3 squares by 3 squares." +
-  "\nYou are X, your friend is O." +
-  "\nPlayers take turns putting their marks in empty squares." +
-  "\nThe first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner." +
-  "\nWhen all 9 squares are full, the game is over." +
-  "\nIf no player has 3 marks in a row, the game ends in a tie."
-     
   alert(alert1);
 }
 
-
 /* How to play event listener (Global) */
-document.getElementById("how-to-play").addEventListener("click", howToPlay1)
-
+document.getElementById("how-to-play").addEventListener("click", howToPlay1);
 
 /* PIG GAME */
 
@@ -448,21 +445,21 @@ function nextPlayer() {
 }
 
 /* how to play button */
-function howToPlay2 () {
-
-     alert("Choose a player to go first."+
-          "\nThat player rolls the die and scores as many points as the total shown on the die providing the die doesnt roll a 1." +
-           "\nThe player may continue rolling and accumulating points (but risk rolling a 1) or end his turn." +
-           "\nIf the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the die to the next player." +
-           "\nPlay passes from player to player until a winner is determined." +
-           "\nThe first player to accumulate 50 or more points wins the game.");
-
+function howToPlay2() {
+  alert(
+    "Choose a player to go first." +
+      "\nThat player rolls the die and scores as many points as the total shown on the die providing the die doesnt roll a 1." +
+      "\nThe player may continue rolling and accumulating points (but risk rolling a 1) or end his turn." +
+      "\nIf the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the die to the next player." +
+      "\nPlay passes from player to player until a winner is determined." +
+      "\nThe first player to accumulate 50 or more points wins the game."
+  );
 }
 /* Event Listeners for the buttons in the global scale */
 document.querySelector("#new-btn").addEventListener("click", pigGame);
 document.querySelector("#roll-btn").addEventListener("click", rollDice);
 document.querySelector("#hold-btn").addEventListener("click", holdButton);
-document.getElementById("how-to-play-2").addEventListener("click", howToPlay2)
+document.getElementById("how-to-play-2").addEventListener("click", howToPlay2);
 
 /* starting the main pig game function for the game within the main 
 scope for it to boot on launch */
