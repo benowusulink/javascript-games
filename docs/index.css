@@ -1,0 +1,475 @@
+/* All elements */
+
+* {
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Body */
+
+body {
+  width: 80%;
+  margin-left: 20%;
+  height: 800px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./assets/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+
+nav {
+  position: fixed;
+  height: 800px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+  width: 20%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  border-right: solid 2px white;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+/* Navigation bar image */
+
+#nav-image {
+  height: auto;
+  width: 100%;
+  margin-left: -16%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid white 2px;
+}
+
+#nav-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation bar links */
+
+#link-header {
+  margin-left: -7%;
+  width: 80%;
+  margin-top: 5%;
+}
+
+#link-header h5 {
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+nav ul li ion-icon {
+  margin-left: -40%;
+  width: 20%;
+  color: white;
+}
+
+#link-games {
+  border: solid white 2px;
+  width: 60%;
+  margin-top: 10%;
+}
+
+#link-games:hover {
+  background-color: black;
+}
+
+#link-games h6 {
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 6%;
+  margin-top: 5%;
+}
+
+#link-games h6:hover {
+  text-decoration: underline;
+}
+
+/* Main game Div */
+
+main {
+  width: 100%;
+  height: 800px;
+}
+
+/* Choose a game Div */
+
+#choose-a-game-div {
+  height: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+#choose-a-game-div h1 {
+  border: solid white 2px;
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  text-transform: uppercase;
+  color: white;
+}
+
+#choose-a-game-div ul {
+  width: 50%;
+  margin-left: 23%;
+  display: flex;
+  justify-content: center;
+}
+
+#choose-a-game-div ul li {
+  border: solid white 2px;
+  text-align: center;
+  width: 20%;
+  margin-left: 23%;
+  margin-top: 2%;
+  cursor: pointer;
+  padding: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  color: white;
+}
+
+#choose-a-game-div ul li:hover {
+  background-color: black;
+}
+/* Tic tac toe main div */
+
+#tic-tac-toe-main-div {
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+/* Tic tac toe header */
+#tic-tac-toe-main-div h2 {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  border: solid 2px white;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 3%;
+}
+
+#how-to-play{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: solid white 2px;
+  padding: 1%
+
+}
+
+#how-to-play:hover{
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+}
+/* Tic tac toe game container div */
+
+#tic-tac-toe-game-container {
+  border: solid white 3px;
+  padding-top: 3%;
+  width: 60%;
+  height: 400px;
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 10px auto;
+  padding-left: 11%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.cell {
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 1px rgb(193, 193, 193);
+  border: 1px solid rgb(193, 193, 193);
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+  color: white;
+}
+
+.cell:hover {
+  border: solid 3px white;
+}
+
+#game-status {
+  background-color: black;
+  border: solid 2px white;
+  color: white;
+  width: 20%;
+  margin-left: 40%;
+}
+
+#game-restart {
+  margin-top: 3%;
+  border: solid 2px grey;
+  color: white;
+  width: 20%;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+#game-restart:hover {
+  background-color: black;
+}
+
+/* Pig Game */
+
+#dice-pig-game-main-div {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+#dice-pig-game-main-div h2 {
+  margin-top: 3%;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 3%;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  border: solid 2px white;
+}
+
+#how-to-play-2{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: solid white 2px;
+  padding: 1%;
+  margin-bottom: 3%
+
+}
+
+#how-to-play-2:hover{
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+}
+
+#pig-game-container {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+/*player 1 */
+
+.pig-game-player-0 {
+  border: white solid 2px;
+  width: 50%;
+  padding-top: 25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+
+.pig-game-player-text-0 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.overall-score-0 {
+  margin-top: 10%;
+  width: 100%;
+  color: white;
+  height: auto;
+  font-size: 60px;
+}
+
+.current-score-0 {
+  border: solid grey 2px;
+  margin-top: 15%;
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  color: white;
+  background-image: linear-gradient(
+    rgba(76, 76, 76, 0.5),
+    rgba(76, 76, 76, 0.5)
+  );
+    padding: 3%
+}
+
+/*player 2 */
+
+.pig-game-player-1 {
+  border: white solid 2px;
+  width: 50%;
+  padding-top: 25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+
+.pig-game-player-text-1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.overall-score-1 {
+  margin-top: 10%;
+  width: 100%;
+  color: white;
+  height: auto;
+  font-size: 60px;
+}
+
+.current-score-1 {
+  border: solid grey 2px;
+  margin-top: 15%;
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  color: white;
+  background-image: linear-gradient(
+    rgba(76, 76, 76, 0.5),
+    rgba(76, 76, 76, 0.5)
+  );
+  padding: 3%
+}
+
+.current-player {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.winner {
+  background-color: grey;
+}
+
+/* New button */
+
+#new-btn {
+  border: solid grey 2px;
+  z-index: +1;
+  height: 8%;
+  width: 20%;
+  margin-left: -61%;
+  margin-top: 3%;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+#new-btn:hover {
+  border: solid 2px white;
+  background-color: black;
+}
+
+#new-btn ion-icon {
+  color: white;
+  font-size: 20px;
+  margin-top: -3.8%;
+}
+
+#new-btn p {
+ margin-left: -30%;
+ margin-top: -2%
+}
+
+/* Roll button */
+
+#roll-btn {
+  border: solid grey 2px;
+  z-index: +1;
+  height: 8%;
+  width: 20%;
+  margin-left: -20%;
+  margin-top: 40%;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+#roll-btn:hover {
+  border: solid 2px white;
+  background-color: black;
+}
+
+#roll-btn ion-icon {
+  color: white;
+  font-size: 20px;
+  margin-top: -3%;
+}
+
+#roll-btn p {
+  margin-left: -30%;
+}
+
+/* Hold button */
+
+#hold-btn {
+  border: solid grey 2px;
+  z-index: +1;
+  height: 8%;
+  width: 20%;
+  margin-left: -20%;
+  margin-top: 50%;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+#hold-btn:hover {
+  border: solid 2px white;
+  background-color: black;
+}
+
+#hold-btn ion-icon {
+  color: white;
+  font-size: 20px;
+  margin-top: -2%;
+}
+
+#hold-btn p {
+ margin-left: -50%;
+}
+
+/* Dice image  */
+
+#dice-image {
+  border: solid white 2px;
+  height: 100px;
+  width: 100px;
+  margin-left: -15%;
+  margin-top: 20%;
+  z-index: +1;
+}

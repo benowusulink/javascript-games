@@ -1,0 +1,14 @@
+# Webpack
+#/webpack.config.js
+#.eslintrc
+#.babelrc
+
+# Prettier
+.prettierignore
+
+# Dependency directories
+/node_modules
+*/node_modules
+
+
+/.DS_Store

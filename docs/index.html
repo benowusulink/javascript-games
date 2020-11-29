@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben's Javascript Games</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index2.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li id="nav-image">
+          <a href = "#choose-a-game-div">
+          <img src="./assets/images/logo.png" />
+        </a>
+        </li>
+        <li id="link-header">
+          <h5>choose a game to play</h5>
+        </li>
+        <li>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </li>
+        <li id="link-games" class="tic-tac-toe-button">
+          <h6>tic-tac-toe</h6>
+        </li>
+        <li id="link-games" class="pig-game-button">
+          <h6>Dice pig game</h6>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Games Main div -->
+    <main>
+      <!-- Choose Game section -->
+      <section id="choose-a-game-div">
+        <h1>choose a game below</h1>
+        <ul>
+          <li class="tic-tac-toe-button1">
+            <p>Tic-Tac-Toe</p>
+          </li>
+          <li>
+            <p class="pig-game-button1">Dice Pig Game</p>
+          </li>
+        </ul>
+      </section>
+      <!-- tic-tac-toe Game -->
+      <section id="tic-tac-toe-main-div">
+        <h2>Tic Tac Toe</h2>
+        <button id="how-to-play"> How to play</button>
+        <p id="game-restart">Restart Game</p>
+        <div id="tic-tac-toe-game-container">
+          <div data-cell-index="0" class="cell"></div>
+          <div data-cell-index="1" class="cell"></div>
+          <div data-cell-index="2" class="cell"></div>
+          <div data-cell-index="3" class="cell"></div>
+          <div data-cell-index="4" class="cell"></div>
+          <div data-cell-index="5" class="cell"></div>
+          <div data-cell-index="6" class="cell"></div>
+          <div data-cell-index="7" class="cell"></div>
+          <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h3 id="game-status"></h3>
+      </section>
+
+      <!-- Dice pig game -->
+      <section id="dice-pig-game-main-div">
+        <h2>Dice Pig Game</h2>
+        <button id="how-to-play-2"> How to play</button>
+        <div id="pig-game-container">
+          <div class="pig-game-player-0 current-player">
+            <h3 class="pig-game-player-text-0">player 1</h3>
+            <h3 class="overall-score-0">overall score</h3>
+            <div class="current-score-0">
+              <h4>current</h4>
+              <h5 id="current-0">0</h5>
+            </div>
+          </div>
+          <div class="pig-game-player-1 current-player">
+            <h3 class="pig-game-player-text-1">player 2</h3>
+            <h3 class="overall-score-1">overall score</h3>
+            <div class="current-score-1">
+              <h4>current</h4>
+              <h5 id="current-1">0</h5>
+            </div>
+          </div>
+          <button id="new-btn">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <p>new game</p>
+          </button>
+          <button id="roll-btn">
+            <ion-icon name="cube-outline"></ion-icon>
+            <p>roll dice</p>
+          </button>
+          <button id="hold-btn">
+            <ion-icon name="hand-left-outline"></ion-icon>
+            <p>hold</p>
+          </button>
+
+          <img id="dice-image" src="./assets/pig-game-assets/dice-1.svg" />
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.1/dist/ionicons.js"></script>
+  </body>
+</html>
