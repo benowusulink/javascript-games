@@ -4,7 +4,7 @@ Javascript Games
 
 ## General website information
 
-This website is a holds two multiplayer
+This website holds two multiplayer
 games created with basic HTML, CSS and javacript.
 
 The first game is tic-tac-toe. The aim whilst creating
@@ -14,6 +14,8 @@ Javacript.
 The second game is called the javascript pig game.
 The aim whilst creating this game was to utilise
 features of HTML, CSS and Javacript.
+
+(More info in the read me of the apps repo)
 
 Webpack (Version 4) was also used with this project to help with
 provide a server.
